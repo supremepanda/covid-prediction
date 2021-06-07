@@ -70,7 +70,6 @@ if __name__ == "__main__":
         config = json.load(f)
     
     for model_config in config["models"]:
-        print(model_config)
         if "enabled" in model_config and model_config["enabled"] == False:
             continue
         
